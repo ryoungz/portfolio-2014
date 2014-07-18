@@ -1,19 +1,68 @@
+html, body, .wrap, section {
+  height: 100%;
+  color: #ffffff;
+}
+
+a {
+  color: #ffffff;
+}
+
 .wrap {
   min-height: 100%;
   height: auto !important;
   height: 100%;
   width: 100%;
-  /* Negative indent footer by its height */
-  margin: 0 auto -60px;
-  /* Pad bottom by footer height */
-  padding-top: 50px;
-  padding-bottom: 75px;
-}
-
-.sidebar {
-	background-color: red;
 }
 
 .main {
 	background-color: blue;
+  height: 100%;
+}
+
+.projects {
+  background-color: green;
+  height: 100%;
+}
+
+footer {
+  background-color: #2b3039;
+  color: #ffffff;
+  height: 75px;
+}
+
+.navbar-custom {
+  background-color: #2b3039;
+  color: #ffffff;
+  border-radius: 0;
+}
+
+.navbar-brand {
+  margin-top: 100px;
+  float: right;
+}
+
+@media (min-width: 768px) {
+  .navbar-collapse {
+    height: auto;
+    border-top: 0;
+    box-shadow: none;
+    max-height: none;
+    padding-left:0;
+    padding-right:0;
+  }
+
+  .navbar-collapse.collapse {
+    display: block !important;
+    width: auto !important;
+    padding-bottom: 0;
+    overflow: visible !important;
+  }
+
+  .navbar-collapse.in {
+    overflow-x: visible;
+  }
+
+  .navbar-nav, .navbar-nav > li, .navbar-left, .navbar-right, .navbar-header { float:none !important; }
+  .navbar-right .dropdown-menu { left:0; right:auto; }
+  .navbar-collapse .navbar-nav.navbar-right:last-child { margin-right: 0; }
 }
